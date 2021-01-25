@@ -13,6 +13,9 @@ app.use('/user',userRoutes);
 
 app.use('/post',userRoutes);
 
+app.use('/delete',userRoutes);
+
+app.use('/update',userRoutes);
 ///Connect To Db
 mongoose.connect(process.env.DBConnection,
  {useNewUrlParser: true,useUnifiedTopology: true}, ()=>
