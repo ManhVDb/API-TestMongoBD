@@ -9,6 +9,8 @@ app.use(bodyParser.json());
 
 // inport Routes
 const userRoutes=require('./routes/user');
+
+const uploadController= require('./routes/uploadFile');
 app.use('/user',userRoutes);
 
 app.use('/post',userRoutes);
@@ -16,6 +18,9 @@ app.use('/post',userRoutes);
 app.use('/delete',userRoutes);
 
 app.use('/update',userRoutes);
+
+app.use('/',uploadController);
+
 ///Connect To Db
 mongoose.connect(process.env.DBConnection,
  {useNewUrlParser: true,useUnifiedTopology: true}, ()=>
