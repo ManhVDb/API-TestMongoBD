@@ -11,7 +11,10 @@ app.use(bodyParser.json());
 const userRoutes=require('./routes/user');
 
 const uploadController= require('./routes/uploadFile');
+<<<<<<< HEAD
 const exRoutes= require('./routes/ex');
+=======
+>>>>>>> c4bff4ab625a3bb596cc72f5c0a7d73ddc3755e5
 app.use('/user',userRoutes);
 
 app.use('/post',userRoutes);
@@ -21,7 +24,11 @@ app.use('/delete',userRoutes);
 app.use('/update',userRoutes);
 
 app.use('/',uploadController);
+<<<<<<< HEAD
 app.use('/',exRoutes);
+=======
+
+>>>>>>> c4bff4ab625a3bb596cc72f5c0a7d73ddc3755e5
 ///Connect To Db
 mongoose.connect(process.env.DBConnection,
  {useNewUrlParser: true,useUnifiedTopology: true}, ()=>
