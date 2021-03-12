@@ -11,7 +11,14 @@ app.use(bodyParser.json());
 const userRoutes=require('./routes/user');
 
 const uploadController= require('./routes/uploadFile');
+<<<<<<< HEAD
 const exRoutes= require('./routes/ex');
+=======
+<<<<<<< HEAD
+const exRoutes= require('./routes/ex');
+=======
+>>>>>>> c4bff4ab625a3bb596cc72f5c0a7d73ddc3755e5
+>>>>>>> 4cbb8393519631e097af2f800b152de3b47faa2f
 app.use('/user',userRoutes);
 
 app.use('/post',userRoutes);
@@ -21,7 +28,15 @@ app.use('/delete',userRoutes);
 app.use('/update',userRoutes);
 
 app.use('/',uploadController);
+<<<<<<< HEAD
 app.use('/',exRoutes);
+=======
+<<<<<<< HEAD
+app.use('/',exRoutes);
+=======
+
+>>>>>>> c4bff4ab625a3bb596cc72f5c0a7d73ddc3755e5
+>>>>>>> 4cbb8393519631e097af2f800b152de3b47faa2f
 ///Connect To Db
 mongoose.connect(process.env.DBConnection,
  {useNewUrlParser: true,useUnifiedTopology: true}, ()=>

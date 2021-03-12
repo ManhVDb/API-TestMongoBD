@@ -3,7 +3,14 @@ const routes= express.Router();
 const Post =require('../models/Post')
 const userController= require('../controller/userController');
 
+<<<<<<< HEAD
 var Client = require('ssh2').Client;
+=======
+<<<<<<< HEAD
+var Client = require('ssh2').Client;
+=======
+>>>>>>> c4bff4ab625a3bb596cc72f5c0a7d73ddc3755e5
+>>>>>>> 4cbb8393519631e097af2f800b152de3b47faa2f
 
 const homeController = require("../controller/home");
 const uploadController = require("../controller/uploadController");
@@ -11,6 +18,10 @@ const uploadController = require("../controller/uploadController");
 
 routes.get('/',homeController.getHome);
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 4cbb8393519631e097af2f800b152de3b47faa2f
 // routes.post('/upload',uploadController.uploadFile);
 
 routes.get('/ex',function  (req,res){
@@ -98,4 +109,11 @@ routes.get('/ex',function  (req,res){
     });    
 
 });
+<<<<<<< HEAD
+=======
+=======
+routes.post('/upload',uploadController.uploadFile);
+
+>>>>>>> c4bff4ab625a3bb596cc72f5c0a7d73ddc3755e5
+>>>>>>> 4cbb8393519631e097af2f800b152de3b47faa2f
 module.exports= routes;
