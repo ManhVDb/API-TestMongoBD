@@ -16,4 +16,4 @@ const PortDât= mongoose.Schema({
     
 })
 
-module.exports=mongoose.model('Account', PostUser);
+module.exports=mongoose.model('posts', PostUser);

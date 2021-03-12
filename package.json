@@ -16,6 +16,8 @@
     "mongoose": "^5.11.13",
     "multer": "^1.4.2",
     "multer-gridfs-storage": "^4.2.0",
-    "nodemon": "^2.0.7"
+    "nodemon": "^2.0.7",
+    "ssh2": "^0.8.9",
+    "ssh2-sftp-client": "^6.0.1"
   }
 }
